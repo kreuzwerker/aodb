@@ -18,9 +18,7 @@ opts = {
 
 base_url = "https://#{opts[:url]}"
 
-bot = Mechanize.new do |conf|
-  conf.user_agent_alias = 'Mechanize'
-end
+bot = Mechanize.new
 
 page = bot.get("#{base_url}/login")
 
@@ -47,5 +45,4 @@ rescue Mechanize::ResponseCodeError => ex
   exit 1
 end
 
-puts 'Done'
 puts page.body
