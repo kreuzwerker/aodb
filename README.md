@@ -6,7 +6,7 @@ These scripts are intended to be executed using cron.
 
 ## Installation
 
-* Requires curl and Ruby (and the `bundler` gem)
+* Requires curl and Ruby 1.9 (and the `bundler` gem), optionally managed using RVM (a Ruby with the alias `1.9` must be installed)
 * `bundle install`
 
 ## Configuration
